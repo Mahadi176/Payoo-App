@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="right">
-                <button class="btn"> <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</button>
+                <a href="./index.html" class="btn"> <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
             </div>
 
         </section>
@@ -75,5 +75,29 @@
             </button>
         </div>
     </section>
+        <!-- Cashout Section  -->
+    <section id="cashout" class="w-11/12 mx-auto py-5">
+        <h2 class="text-2xl font-bold mb-5">Cashout</h2>
+             <div class="card bg-base-100 w-full rounded-2xl">
+               <div class="card-body">
+                 <fieldset class="fieldset">
+                    <!-- agent  -->
+                   <label class="label text-neutral font-bold">Agent Number</label>
+                   <input id="cashout-input" maxlength="11" minlength="11" 
+                   type="email" class="input rounded-full bg-base-200 w-full" placeholder="Enter Your Number" />
+                   <!-- amount  -->
+                   <label class="label text-neutral font-bold">Ammount</label>
+                   <input id="cashout-ammount" maxlength="11" 
+                   type="number" class="input rounded-full bg-base-200 w-full" placeholder="Enter Your Amount" />
+                   <!-- pin -->
+                   <label class="label text-neutral font-bold">4 Digit Pin</label>
+                   <input id="cashout-pin" maxlength="4" minlength="4" 
+                    type="password" class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 Digit Pin" />
+                   <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">withdraw Money</button>
+                 </fieldset>
+               </div>
+             </div> 
+    </section>
+    <script src="script/cashout.js"></script>
   </body>
 </html>
