@@ -4,11 +4,10 @@ console.log('machine added')
 function getValueFromInput(id) {
     const input = document.getElementById(id);
     const value = input.value;
-    console.log(value) ;
     return value ;
 }
 
-// machine id -> balance 
+// machine value -> balance 
 
 function getBalance(){
     const balanceElement = document.getElementById('balance');
@@ -17,9 +16,23 @@ function getBalance(){
     return Number(balance);
 }
 
-// machine id -> set Balance 
+// machine value -> set Balance 
 
 function setBalance(value){
     const balanceElement = document.getElementById('balance');
     balanceElement.innerText = value ;
+ }
+
+ // show function :: Machine ID > Hide all > Show id
+
+ function showOnly(id){
+    const addMoney = document.getElementById('add-money')
+    const cashOut = document.getElementById('cashout')
+//    hide everything
+    addMoney.classList.add('hidden')
+    cashOut.classList.add('hidden')
+        // show selected item 
+
+        const selected = document.getElementById(id);
+        selected.classList.remove('hidden')
  }
