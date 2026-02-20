@@ -3,7 +3,6 @@ document.getElementById('cashout-btn')
     // 1. get agent number and validate 
     const cashoutNumberInput = document.getElementById('cashout-input') ;
     const cashoutNumber = cashoutNumberInput.value ;
-    console.log(cashoutNumber)
     if(cashoutNumber.length !='11' ){
         alert('Invalid Agent Number')
         return ;
@@ -11,7 +10,6 @@ document.getElementById('cashout-btn')
     // 2.get the amount , validate , covert the number 
     const cashoutAmountInput = document.getElementById('cashout-amount') ;
     const cashoutAmount = cashoutAmountInput.value ;
-    console.log(cashoutAmount)
     // 3. get current balance , validate , covert to number 
     const balanceElement = document.getElementById('balance');
     const balance = balanceElement.innerText;
