@@ -20,7 +20,7 @@ document.getElementById('cashout-btn')
         return ;
     }
     // 5. get the pin and verify 
-    const Pin = document.getValueFromInput('cashout-pin');
+    const Pin = getValueFromInput('cashout-pin');
     
     if(Pin == "1234"){
         // 6.true :: show alert verify 
@@ -39,7 +39,7 @@ document.getElementById('cashout-btn')
 // document.getElementById('cashout-btn')
 // .addEventListener('click', function(){
 //     // 1. get agent number and validate 
-//     const cashoutNumberInput = document.getElementById('cashout-input') ;
+//     const cashoutNumberInput = document.getElementById('cashout-number') ;
 //     const cashoutNumber = cashoutNumberInput.value ;
 //     if(cashoutNumber.length !='11' ){
 //         alert('Invalid Agent Number')
